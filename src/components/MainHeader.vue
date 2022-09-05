@@ -73,7 +73,7 @@ export default {
 header {
     .container {
         display: flex;
-        padding: 2rem 0.75rem;
+        padding: 2rem 0.75rem 0;
 
         .logo_wrapper {
             margin-right: auto;
@@ -82,7 +82,7 @@ header {
         .main_nav {
 
             .nav_list {
-                gap: 0.75rem;
+                gap: 1.5rem;
                 height: 100%;
                 display: flex;
 
@@ -99,7 +99,7 @@ header {
                             &::after {
                                 content: "";
                                 position: absolute;
-                                top: 100%;
+                                bottom: 0;
                                 left: 50%;
                                 width: 100%;
                                 height: 0.5rem;
