@@ -43,6 +43,168 @@
                 </ul>
             </div>
         </div>
+        <div class="banner menu">
+            <div class="container">
+                <menu class="main_menu">
+                    <li class="menu_item">
+                        <h3 class="item_title">
+                            Dc comics
+                        </h3>
+                        <ul class="item_list-wrapper">
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <h3 class="item_title">
+                            Dc
+                        </h3>
+                        <ul class="item_list-wrapper">
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <h3 class="item_title">
+                            Sites
+                        </h3>
+                        <ul class="item_list-wrapper">
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <h3 class="item_title">
+                            Shop
+                        </h3>
+                        <ul class="item_list-wrapper">
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="" class="item_link">
+                                    Link
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </menu>
+                <div class="logo_wrapper">
+                    <img src="@/assets/img/dc-logo-bg.png" alt="" />
+                </div>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -81,6 +243,7 @@ footer {
                                 height: 70px;
                             }
 
+                            // Dc Power Visa Icon SVG 
                             svg {
                                 height: 50px;
 
@@ -93,6 +256,47 @@ footer {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .banner {
+        &.menu {
+            color: $dc-light_bg;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(@/assets/img/footer-bg.jpg);
+
+            .container {
+                display: flex;
+
+                .main_menu{
+                    // display: grid;
+                    // column-gap: 2rem;
+                    // grid-template-columns: repeat(3, 1fr);
+                    flex-basis: calc(100% / 3);
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 1rem;
+                    margin-right: auto;
+                    .menu_item{
+                        padding: 2rem 0;
+                        align-self: flex-start;
+                        flex-basis: calc((100% / 3) - 1rem);
+
+                        h3{
+                            font-weight: bold;
+                            padding-bottom: 1rem;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                }
+
+                .logo_wrapper {
+                    margin-top: -30px;
                 }
             }
         }
