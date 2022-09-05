@@ -15,7 +15,7 @@ export default {
 @import '@/style/variables';
 
 main {
-    padding: 2rem 0;
+    padding: 3rem 0;
     font-weight: bold;
     color: $dc-light_bg;
     background-color: $dc-dark_bg;
