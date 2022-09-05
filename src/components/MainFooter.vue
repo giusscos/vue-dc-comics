@@ -205,6 +205,45 @@
                 </div>
             </div>
         </div>
+        <div class="banner join">
+            <div class="container">
+                <div class="cta_wrapper">
+                    <a href="" class="btn sign-up_cta uppercase">
+                        Sign up now!
+                    </a>
+                </div>
+                <h3 class="uppercase">
+                    Follow us
+                </h3>
+                <ul class="social_list">
+                    <li class="list_item">
+                        <a href="" class="item_link">
+                            <img src="@/assets/img/footer-facebook.png" alt="" />
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="" class="item_link">
+                            <img src="@/assets/img/footer-twitter.png" alt="" />
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="" class="item_link">
+                            <img src="@/assets/img/footer-youtube.png" alt="" />
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="" class="item_link">
+                            <img src="@/assets/img/footer-pinterest.png" alt="" />
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="" class="item_link">
+                            <img src="@/assets/img/footer-periscope.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -214,12 +253,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/index.scss';
 @import '@/style/variables';
 
 footer {
+    position: relative;
 
     .banner {
         &.blue {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
             background-color: $dc-accent_link;
 
             .container {
@@ -270,23 +315,21 @@ footer {
             background-image: url(@/assets/img/footer-bg.jpg);
 
             .container {
+                padding: 5rem 0;
                 display: flex;
+                align-items: center;
 
-                .main_menu{
-                    // display: grid;
-                    // column-gap: 2rem;
-                    // grid-template-columns: repeat(3, 1fr);
-                    flex-basis: calc(100% / 3);
+                .main_menu {
                     display: flex;
                     flex-wrap: wrap;
                     column-gap: 1rem;
                     margin-right: auto;
-                    .menu_item{
-                        padding: 2rem 0;
-                        align-self: flex-start;
+                    flex-basis: calc(100% / 3);
+
+                    .menu_item {
                         flex-basis: calc((100% / 3) - 1rem);
 
-                        h3{
+                        h3 {
                             font-weight: bold;
                             padding-bottom: 1rem;
                             text-transform: uppercase;
@@ -294,9 +337,40 @@ footer {
                     }
 
                 }
+            }
+        }
+    }
 
-                .logo_wrapper {
-                    margin-top: -30px;
+    .banner {
+        &.join {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 3rem 0;
+            color: $dc-light_bg;
+            background-color: $dc-dark_bg_alternative;
+
+            .container {
+                display: flex;
+                align-items: center;
+
+                .btn {
+                    &.sign-up_cta {
+                        border: 2px solid $dc-accent_link;
+                    }
+                }
+
+                h3 {
+                    font-weight: bold;
+                    margin-left: auto;
+                    margin-right: 1rem;
+                    color: $dc-accent_link;
+                }
+
+                .social_list {
+                    display: flex;
+                    gap: 1rem;
                 }
             }
         }

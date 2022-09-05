@@ -73,7 +73,7 @@ export default {
 header {
     .container {
         display: flex;
-        padding: 2rem 0.75rem 0;
+        padding: 0.5rem 0.75rem 0;
 
         .logo_wrapper {
             margin-right: auto;
