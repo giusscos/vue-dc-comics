@@ -18,11 +18,13 @@ export default {
     MainHeader,
     MainContent,
     MainFooter
-}
+  }
 }
 </script>
 
 <style lang="scss">
+@import '@/style/index.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

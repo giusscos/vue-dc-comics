@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+menu {
+    list-style: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+// Layout
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+// Components
+
+.uppercase {
+    text-transform: uppercase;
+}
