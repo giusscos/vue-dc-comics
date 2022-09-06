@@ -168,7 +168,7 @@ export default {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url(../../assets/img/footer-bg.jpg);
+        background-image: url(../assets/img/footer-bg.jpg);
 
         .container {
             display: flex;
@@ -176,7 +176,7 @@ export default {
             background-size: auto 130%;
             background-repeat: no-repeat;
             background-position: center right;
-            background-image: url(../../assets/img/dc-logo-bg.png);
+            background-image: url(../assets/img/dc-logo-bg.png);
 
             .footer_menu {
                 gap: 2rem;

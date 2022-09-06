@@ -15,31 +15,31 @@
 <script>
 const bannerLinks = [
     {
-        src: require('../../assets/img/buy-comics-digital-comics.png'),
+        src: require('../assets/img/buy-comics-digital-comics.png'),
         text: 'Digital comics',
         href: '#',
         height: '70px',
     },
     {
-        src: require('../../assets/img/buy-comics-merchandise.png'),
+        src: require('../assets/img/buy-comics-merchandise.png'),
         text: 'Dc merchandise',
         href: '#',
         height: '70px',
     },
     {
-        src: require('../../assets/img/buy-comics-subscriptions.png'),
+        src: require('../assets/img/buy-comics-subscriptions.png'),
         text: 'Subscription',
         href: '#',
         height: '70px',
     },
     {
-        src: require('../../assets/img/buy-comics-shop-locator.png'),
+        src: require('../assets/img/buy-comics-shop-locator.png'),
         text: 'Comic shop location',
         href: '#',
         height: '70px',
     },
     {
-        src: require('../../assets/img/buy-dc-power-visa.svg'),
+        src: require('../assets/img/buy-dc-power-visa.svg'),
         text: 'Dc power visa',
         href: '#',
         height: '50px',
@@ -54,8 +54,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../../style/index.scss';
-@import '../../style/variables';
+@import '../style/index.scss';
+@import '../style/variables';
 
 .banner {
     &.blue {

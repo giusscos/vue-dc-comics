@@ -11,27 +11,27 @@
 const socialLinks = [
     {
         href: '#',
-        src: require('../../assets/img/footer-facebook.png'),
+        src: require('../assets/img/footer-facebook.png'),
         text: 'Facebook',
     },
     {
         href: '#',
-        src: require('../../assets/img/footer-twitter.png'),
+        src: require('../assets/img/footer-twitter.png'),
         text: 'Twitter',
     },
     {
         href: '#',
-        src: require('../../assets/img/footer-youtube.png'),
+        src: require('../assets/img/footer-youtube.png'),
         text: 'Youtube',
     },
     {
         href: '#',
-        src: require('../../assets/img/footer-pinterest.png'),
+        src: require('../assets/img/footer-pinterest.png'),
         text: 'Pinterest',
     },
     {
         href: '#',
-        src: require('../../assets/img/footer-periscope.png'),
+        src: require('../assets/img/footer-periscope.png'),
         text: 'Periscope',
     },
 ]
