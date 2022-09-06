@@ -2,41 +2,10 @@
     <div class="banner blue">
         <div class="container">
             <ul class="footer_list-merch uppercase">
-                <li class="list_item">
-                    <a href="" class="item_link">
-                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="" />
-                        Digital comics
-                    </a>
-                </li>
-                <li class="list_item">
-                    <a href="" class="item_link">
-                        <img src="@/assets/img/buy-comics-merchandise.png" alt="" />
-                        Dc Merchandise
-                    </a>
-                </li>
-                <li class="list_item">
-                    <a href="" class="item_link">
-                        <img src="@/assets/img/buy-comics-subscriptions.png" alt="" />
-                        Subscription
-                    </a>
-                </li>
-                <li class="list_item">
-                    <a href="" class="item_link">
-                        <img src="@/assets/img/buy-comics-shop-locator.png" alt="" />
-                        Comic Shop Locator
-                    </a>
-                </li>
-                <li class="list_item">
-                    <a href="" class="item_link">
-                        <svg version="1.1" id="Layer_2_1_" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                            viewBox="0 0 79.5 50.9" xml:space="preserve">
-                            <path class="st0"
-                                d="M73.9 49.6H5.3c-2.1 0-3.8-1.7-3.8-3.8V5.4c0-2.1 1.7-3.8 3.8-3.8h68.6c2.1 0 3.8 1.7 3.8 3.8v40.3c0 2.1-1.7 3.9-3.8 3.9zM1.5 15.4h76.2" />
-                            <path fill="#fff" stroke="#fff" stroke-width=".998" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-miterlimit="10"
-                                d="M50.1 22.1l-9.7 1.4 5.1-16.4L29 30.2l9.3-1.3L34.4 44z" />
-                        </svg>
-                        Dc power visa
+                <li class="list_item" v-for="(bannerLink, i) in bannerLinks" :key="`${i}banner`">
+                    <a :href="bannerLink.href" class="item_link">
+                        <img :src="bannerLink.src" :alt="bannerLink.text" :height="bannerLink.height" />
+                        {{ bannerLink.text }}
                     </a>
                 </li>
             </ul>
@@ -44,13 +13,49 @@
     </div>
 </template>
 <script>
+    const bannerLinks = [
+        {
+            src: require('../../assets/img/buy-comics-digital-comics.png'),
+            text: 'Digital comics',
+            href: '#',
+            height: '70px',
+        },
+        {
+            src: require('../../assets/img/buy-comics-merchandise.png'),
+            text: 'Dc merchandise',
+            href: '#',
+            height: '70px',
+        },
+        {
+            src: require('../../assets/img/buy-comics-subscriptions.png'),
+            text: 'Subscription',
+            href: '#',
+            height: '70px',
+        },
+        {
+            src: require('../../assets/img/buy-comics-shop-locator.png'),
+            text: 'Comic shop location',
+            href: '#',
+            height: '70px',
+        },
+        {
+            src: require('../../assets/img/buy-dc-power-visa.svg'),
+            text: 'Dc power visa',
+            href: '#',
+            height: '50px',
+        },
+    ]
 export default {
-
+    data(){
+        return {
+            bannerLinks
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
-@import '@/style/index.scss';
-@import '@/style/variables';
+@import '../../style/index.scss';
+@import '../../style/variables';
 
 .banner {
     &.blue {
@@ -76,22 +81,6 @@ export default {
                         font-weight: bold;
                         align-items: center;
                         color: $dc-light_bg;
-
-                        img {
-                            height: 70px;
-                        }
-
-                        // Dc Power Visa Icon SVG 
-                        svg {
-                            height: 50px;
-
-                            .st0 {
-                                fill: none;
-                                stroke: #fff;
-                                stroke-width: 1.7732;
-                                stroke-miterlimit: 10
-                            }
-                        }
                     }
                 }
             }

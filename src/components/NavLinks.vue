@@ -69,7 +69,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '@/style/variables';
+@import '../style/variables';
 
 .nav_list {
     gap: 1.5rem;

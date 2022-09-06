@@ -5,25 +5,25 @@
                 <ul class="footer_list-merch uppercase">
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/buy-comics-digital-comics.png" alt="" />
+                            <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
                             Digital comics
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/buy-comics-merchandise.png" alt="" />
+                            <img src="../assets/img/buy-comics-merchandise.png" alt="" />
                             Dc Merchandise
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/buy-comics-subscriptions.png" alt="" />
+                            <img src="../assets/img/buy-comics-subscriptions.png" alt="" />
                             Subscription
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/buy-comics-shop-locator.png" alt="" />
+                            <img src="../assets/img/buy-comics-shop-locator.png" alt="" />
                             Comic Shop Locator
                         </a>
                     </li>
@@ -201,7 +201,7 @@
                     </li>
                 </menu>
                 <div class="logo_wrapper">
-                    <img src="@/assets/img/dc-logo-bg.png" alt="" />
+                    <img src="../assets/img/dc-logo-bg.png" alt="" />
                 </div>
             </div>
         </div>
@@ -218,27 +218,27 @@
                 <ul class="social_list">
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/footer-facebook.png" alt="" />
+                            <img src="../assets/img/footer-facebook.png" alt="" />
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/footer-twitter.png" alt="" />
+                            <img src="../assets/img/footer-twitter.png" alt="" />
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/footer-youtube.png" alt="" />
+                            <img src="../assets/img/footer-youtube.png" alt="" />
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/footer-pinterest.png" alt="" />
+                            <img src="../assets/img/footer-pinterest.png" alt="" />
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="" class="item_link">
-                            <img src="@/assets/img/footer-periscope.png" alt="" />
+                            <img src="../assets/img/footer-periscope.png" alt="" />
                         </a>
                     </li>
                 </ul>
@@ -254,8 +254,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/index.scss';
-@import '@/style/variables';
+@import '../style/index.scss';
+@import '../style/variables';
 
 footer {
     position: relative;
@@ -313,7 +313,7 @@ footer {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: url(@/assets/img/footer-bg.jpg);
+            background-image: url(../assets/img/footer-bg.jpg);
 
             .container {
                 padding: 5rem 0;

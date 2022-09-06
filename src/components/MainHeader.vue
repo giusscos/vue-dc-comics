@@ -2,7 +2,7 @@
     <header>
         <div class="container">
             <div class="logo_wrapper">
-                <img src="@/assets/img/dc-logo.png" alt="logo-dc" />
+                <img src="../assets/img/dc-logo.png" alt="logo-dc" />
             </div>
             <nav class="main_nav">
                 <NavLinks />
@@ -19,8 +19,6 @@ export default{
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/variables';
-
 header {
     .container {
         display: flex;
