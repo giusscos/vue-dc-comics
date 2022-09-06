@@ -8,7 +8,17 @@
                     </h3>
                     <ul class="item_list-wrapper">
                         <li class="list_item" v-for="(link, j) in footerLink.links" :key="`${j}link`">
-                            <a :href="link.href" class="item_link">
+                            <a :href="link.href" class="item_link capitalize">
+                                {{ link.text}}
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="item_title">
+                        {{ footerLink.title2}}
+                    </h3>
+                    <ul class="item_list-wrapper">
+                        <li class="list_item" v-for="(link, j) in footerLink.links2 " :key="`${j}link`">
+                            <a :href="link.href" class="item_link capitalize">
                                 {{ link.text}}
                             </a>
                         </li>
@@ -51,7 +61,20 @@ const footerLinks = [
                 href: '#',
                 text: 'News'
             },
+        ],
+        // Soluzione molto brutta
+        title2: 'Shop',
+        links2: [
+            {
+                href: '#',
+                text: 'Shop DC'
+            },
+            {
+                href: '#',
+                text: 'Shop DC Collectibles'
+            }
         ]
+
     },
     {
         title: 'Dc',
@@ -127,19 +150,6 @@ const footerLinks = [
             },
         ]
     },
-    {
-        title: 'Shop',
-        links: [
-            {
-                href: '#',
-                text: 'Shop DC'
-            },
-            {
-                href: '#',
-                text: 'Shop DC Collectibles'
-            }
-        ]
-    },
 ]
 export default {
     data() {
@@ -169,30 +179,32 @@ export default {
             background-image: url(../../assets/img/dc-logo-bg.png);
 
             .footer_menu {
-                padding: 2rem 0;
+                gap: 2rem;
                 display: flex;
+                padding: 2rem 0;
                 flex-wrap: wrap;
-                column-gap: 1rem;
-                margin-right: auto;
 
                 .menu_item {
-                    flex-basis: calc((100% / 3) - 1rem);
-
+                    flex-grow: 1;
                     h3 {
                         font-weight: bold;
-                        padding-bottom: 1rem;
+                        padding-bottom: 0.5rem;
                         text-transform: uppercase;
                     }
 
-                    .list_item {
-                        padding: 0.1rem 0;
-                        
-                        .item_link {
-                            opacity: 0.7;
+                    .item_list-wrapper {
+                        padding-bottom: 1rem;
+
+                        .list_item {
                             padding: 0.1rem 0;
-                            
-                            &:hover {
-                                opacity: 1;
+
+                            .item_link {
+                                opacity: 0.7;
+                                padding: 0.1rem 0;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
                             }
                         }
                     }

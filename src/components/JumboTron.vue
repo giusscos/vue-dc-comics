@@ -10,7 +10,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .jumbo {
-    height: 300px;
+    height: 400px;
     background-image: url("../assets/img/jumbotron.jpg");
     background-position: center top;
     background-size: cover;

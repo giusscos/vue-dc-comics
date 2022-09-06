@@ -21,6 +21,7 @@ img{
 // Layout
 
 .container {
+    padding: 0 0.75rem;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -29,6 +30,10 @@ img{
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
 
 .btn{

@@ -38,7 +38,6 @@ export default {
 
 footer {
     position: relative;
-
     .banner {
         &.join {
             padding: 3rem 0;
