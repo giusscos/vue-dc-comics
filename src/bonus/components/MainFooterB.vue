@@ -1,168 +1,7 @@
 <template>
     <footer>
         <BannerBlue />
-        <div class="banner menu">
-            <div class="container">
-                <menu class="main_menu">
-                    <li class="menu_item">
-                        <h3 class="item_title">
-                            Dc comics
-                        </h3>
-                        <ul class="item_list-wrapper">
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu_item">
-                        <h3 class="item_title">
-                            Dc
-                        </h3>
-                        <ul class="item_list-wrapper">
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu_item">
-                        <h3 class="item_title">
-                            Sites
-                        </h3>
-                        <ul class="item_list-wrapper">
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu_item">
-                        <h3 class="item_title">
-                            Shop
-                        </h3>
-                        <ul class="item_list-wrapper">
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                            <li class="list_item">
-                                <a href="" class="item_link">
-                                    Link
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </menu>
-                <div class="logo_wrapper">
-                    <img src="../../assets/img/dc-logo-bg.png" alt="" />
-                </div>
-            </div>
-        </div>
+        <FooterMenu />
         <div class="banner join">
             <div class="container">
                 <div class="cta_wrapper">
@@ -207,8 +46,9 @@
 
 <script>
 import BannerBlue from './BannerBlue.vue';
+import FooterMenu from './FooterMenu.vue';
 export default {
-    components: { BannerBlue }
+    components: { BannerBlue, FooterMenu}
 }
 </script>
 
@@ -220,46 +60,7 @@ footer {
     position: relative;
 
     .banner {
-        &.menu {
-            color: $dc-light_bg;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-image: url(../../assets/img/footer-bg.jpg);
-
-            .container {
-                padding: 5rem 0;
-                display: flex;
-                align-items: center;
-
-                .main_menu {
-                    display: flex;
-                    flex-wrap: wrap;
-                    column-gap: 1rem;
-                    margin-right: auto;
-                    flex-basis: calc(100% / 3);
-
-                    .menu_item {
-                        flex-basis: calc((100% / 3) - 1rem);
-
-                        h3 {
-                            font-weight: bold;
-                            padding-bottom: 1rem;
-                            text-transform: uppercase;
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-
-    .banner {
         &.join {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
             padding: 3rem 0;
             color: $dc-light_bg;
             background-color: $dc-dark_bg_alternative;

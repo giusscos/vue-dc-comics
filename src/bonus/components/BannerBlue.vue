@@ -13,38 +13,38 @@
     </div>
 </template>
 <script>
-    const bannerLinks = [
-        {
-            src: require('../../assets/img/buy-comics-digital-comics.png'),
-            text: 'Digital comics',
-            href: '#',
-            height: '70px',
-        },
-        {
-            src: require('../../assets/img/buy-comics-merchandise.png'),
-            text: 'Dc merchandise',
-            href: '#',
-            height: '70px',
-        },
-        {
-            src: require('../../assets/img/buy-comics-subscriptions.png'),
-            text: 'Subscription',
-            href: '#',
-            height: '70px',
-        },
-        {
-            src: require('../../assets/img/buy-comics-shop-locator.png'),
-            text: 'Comic shop location',
-            href: '#',
-            height: '70px',
-        },
-        {
-            src: require('../../assets/img/buy-dc-power-visa.svg'),
-            text: 'Dc power visa',
-            href: '#',
-            height: '50px',
-        },
-    ]
+const bannerLinks = [
+    {
+        src: require('../../assets/img/buy-comics-digital-comics.png'),
+        text: 'Digital comics',
+        href: '#',
+        height: '70px',
+    },
+    {
+        src: require('../../assets/img/buy-comics-merchandise.png'),
+        text: 'Dc merchandise',
+        href: '#',
+        height: '70px',
+    },
+    {
+        src: require('../../assets/img/buy-comics-subscriptions.png'),
+        text: 'Subscription',
+        href: '#',
+        height: '70px',
+    },
+    {
+        src: require('../../assets/img/buy-comics-shop-locator.png'),
+        text: 'Comic shop location',
+        href: '#',
+        height: '70px',
+    },
+    {
+        src: require('../../assets/img/buy-dc-power-visa.svg'),
+        text: 'Dc power visa',
+        href: '#',
+        height: '50px',
+    },
+]
 export default {
     data(){
         return {
@@ -59,10 +59,6 @@ export default {
 
 .banner {
     &.blue {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
         background-color: $dc-accent_link;
 
         .container {
