@@ -2,14 +2,16 @@
   <div id="app">
     <MainHeader />
     <MainContent />
-    <MainFooter />
+    <MainFooterB />
+    <!-- <MainFooter /> -->
   </div>
 </template>
 
 <script>
 import MainHeader from './components/MainHeader.vue';
 import MainContent from './components/MainContent.vue';
-import MainFooter from './components/MainFooter.vue';
+// import MainFooter from './components/MainFooter.vue';
+import MainFooterB from './bonus/components/MainFooterB.vue';
 
 
 export default {
@@ -17,7 +19,8 @@ export default {
   components: {
     MainHeader,
     MainContent,
-    MainFooter
+    // MainFooter,
+    MainFooterB
   }
 }
 </script>
