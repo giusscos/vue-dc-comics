@@ -22,3 +22,5 @@ pnpm-debug.log*
 *.sln
 *.sw?
 dc-comics-empty-layout.png
+vue-dc-comics-2/dc-comics.json
+vue-dc-comics-2/dc-comics.png
