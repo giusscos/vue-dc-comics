@@ -12,33 +12,7 @@
                 <h3 class="uppercase">
                     Follow us
                 </h3>
-                <ul class="social_list">
-                    <li class="list_item">
-                        <a href="" class="item_link">
-                            <img src="../../assets/img/footer-facebook.png" alt="" />
-                        </a>
-                    </li>
-                    <li class="list_item">
-                        <a href="" class="item_link">
-                            <img src="../../assets/img/footer-twitter.png" alt="" />
-                        </a>
-                    </li>
-                    <li class="list_item">
-                        <a href="" class="item_link">
-                            <img src="../../assets/img/footer-youtube.png" alt="" />
-                        </a>
-                    </li>
-                    <li class="list_item">
-                        <a href="" class="item_link">
-                            <img src="../../assets/img/footer-pinterest.png" alt="" />
-                        </a>
-                    </li>
-                    <li class="list_item">
-                        <a href="" class="item_link">
-                            <img src="../../assets/img/footer-periscope.png" alt="" />
-                        </a>
-                    </li>
-                </ul>
+                <SocialLinks />
             </div>
         </div>
     </footer>
@@ -47,8 +21,14 @@
 <script>
 import BannerBlue from './BannerBlue.vue';
 import FooterMenu from './FooterMenu.vue';
+import SocialLinks from './SocialLinks.vue';
+
 export default {
-    components: { BannerBlue, FooterMenu}
+    components: {
+        BannerBlue,
+        FooterMenu,
+        SocialLinks
+    }
 }
 </script>
 
@@ -80,11 +60,6 @@ footer {
                     margin-left: auto;
                     margin-right: 1rem;
                     color: $dc-accent_link;
-                }
-
-                .social_list {
-                    display: flex;
-                    gap: 1rem;
                 }
             }
         }
