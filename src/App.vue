@@ -10,7 +10,7 @@
 <script>
 import MainHeader from './components/MainHeader.vue';
 import MainContent from './components/MainContent.vue';
-// import MainFooter from './components/MainFooter.vue';
+// import MainFooter from './components/MainFooter.vue'; Tutte le nuove aggiunte riguardo al Footer sono state fatte nella cartella Bonus 
 import MainFooterB from './bonus/components/MainFooterB.vue';
 
 
